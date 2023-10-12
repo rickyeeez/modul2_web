@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let angka1;
+        let angka2;
+        
+        function jumlah(){
+            angka1 = document.getElementById("angka1").value
+            angka2 = document.getElementById("angka2").value
+            hasil =  parseInt(angka1) + parseInt(angka2)
+            alert("Hasil Penjumlahan = " + hasil)
+        }
+
+    </script>
+</head>
+<body>
+    <H1>Penjumlahan bilangan</H1><br>
+    <label for="angka1">Bilangan pertama</label>
+    <input type="text" name="angka1" id="angka1">
+    <label for="angka2">Bilangan kedua</label>
+    <input type="text" name="angka2" id="angka2"><br><br>
+    <button onclick="jumlah()">Submit</button>
+    <button onclick="ulang()">Ulang</button>
+    <script type="text/javascript"> 
+        function ulang(){
+    document.getElementById("angka1").value = ""
+    document.getElementById("angka2").value = ""
+        }
+    </script>
+</body>
+</html>
